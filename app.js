@@ -11,10 +11,10 @@ function equal() {
     while (result.firstChild) {
         result.removeChild(result.firstChild);
     }
-    //Numeros quebrados até no maximo 3 casas decimais
+    //Numeros quebrados até no maximo 2 casas decimais
     if(parseInt(resultado) != parseFloat(resultado)){
         //adiciona o resultado na tela
-        result.innerText = resultado.toFixed(3);
+        result.innerText = resultado.toFixed(2);
     }else{
         //adiciona o resultado na tela
         result.innerText = resultado;
